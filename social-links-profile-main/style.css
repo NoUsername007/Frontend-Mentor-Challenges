@@ -1,0 +1,104 @@
+:root {
+    --Grey_700: hsl(0, 0%, 20%);
+    --Grey_800: hsl(0, 0%, 12%);
+    --Grey_900: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: UseThis;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--White);
+    font-family: UseThis;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--Grey_900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p, button {
+    font-size: 14px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.container {
+    background-color: var(--Grey_800);
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+.container > * {
+    margin: 6px 0;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.green {
+    color: var(--Green);
+}
+
+button {
+    background-color: var(--Grey_700);
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--Grey_900);
+    transition: background-color 0.35s;
+    cursor: pointer;
+}
+
+@media screen and (width <= 418px) {
+    .container {
+        padding: 10px 25px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
