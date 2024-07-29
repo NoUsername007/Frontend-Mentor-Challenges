@@ -1,0 +1,117 @@
+:root {
+    --Stone_100: hsl(30, 54%, 90%);
+    --Stone_150: hsl(30, 18%, 87%);
+    --Stone_600: hsl(30, 10%, 34%);
+    --Stone_900: hsl(24, 5%, 18%);
+    --Brown_800: hsl(14, 45%, 36%);
+    --Rose_800: hsl(332, 51%, 32%);
+    --Rose_50: hsl(332, 33%, 89%);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--Rose_50);
+}
+
+.pink {
+    background-color: var(--Rose_50);
+    padding: 10px 30px;
+}
+
+.dark-pink {
+    color: var(--Rose_800);
+    font-size: 26px;
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+div {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.info {
+    padding: 10px;
+}
+
+div>* {
+    margin: 10px;
+    padding: 10px;
+}
+
+h2 {
+    color: var(--Brown_800);
+    font-size: 30px;
+}
+
+ul li,
+p {
+    font-size: 17px;
+}
+
+.Instructions ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+span {
+    width: 49%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.gold {
+    font-weight: 800;
+    color: var(--Brown_800);
+}
+
+
+hr {
+    height: 3px;
+    padding: 0;
+    background-color: var(--Brown_800);
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px 0;
+    border-radius: 20px;
+}
+
+@media screen and (width <= 850px) {
+    body {
+        background-color: #fff;
+    }
+
+    main {
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
